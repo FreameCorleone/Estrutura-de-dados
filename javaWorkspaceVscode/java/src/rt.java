@@ -1,0 +1,5 @@
+public class rt {
+    public static void main(String[] args) {
+        System.out.println("a");
+    }
+}
