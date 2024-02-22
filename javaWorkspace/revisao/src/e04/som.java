@@ -1,3 +1,4 @@
+package e04;
 public class som {
     private int resultado; // Variável resultado é privada
     private int resultado2;

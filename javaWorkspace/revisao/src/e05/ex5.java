@@ -1,3 +1,4 @@
+package e05;
 import java.util.Scanner;
 public class ex5 {
     
