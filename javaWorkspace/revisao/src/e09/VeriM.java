@@ -1,3 +1,4 @@
+package e09;
 public class VeriM {
     private static String mes;
 

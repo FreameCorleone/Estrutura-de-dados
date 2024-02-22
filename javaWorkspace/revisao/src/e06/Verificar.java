@@ -1,3 +1,4 @@
+package e06;
 public class Verificar {
     private float resultado;
     

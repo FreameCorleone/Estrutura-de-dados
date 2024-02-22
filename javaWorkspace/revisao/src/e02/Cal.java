@@ -1,3 +1,4 @@
+package e02;
 public class Cal {
     public static int Calc(int a, int b, String c) {
         int resultado = 0;

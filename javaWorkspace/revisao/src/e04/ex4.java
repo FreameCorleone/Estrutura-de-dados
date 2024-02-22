@@ -1,3 +1,4 @@
+package e04;
 public class ex4 {
     public static void main(String[] args) {
         som objetoSom = new som();

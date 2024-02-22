@@ -1,3 +1,4 @@
+package e01;
 public class rep {
     public static int repe(int a) {
         int b = 0;

@@ -1,3 +1,4 @@
+package e05;
 public class Ver {
     public int veri(int a) {
         if(a % 2 == 0) {
