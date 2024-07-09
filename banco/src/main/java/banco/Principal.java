@@ -6,7 +6,7 @@ public class Principal {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         CadastrarConta cadastro = new CadastrarConta(5);
-        cadastro.adicionarConta("João", 1000, 0);
+        cadastro.adicionarConta("João", 1000, 1);
         cadastro.adicionarConta("Maria", 2000, 1);
         cadastro.adicionarConta("Jose", 1500, 1);
 

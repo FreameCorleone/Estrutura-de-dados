@@ -34,8 +34,12 @@ class CadastrarConta {
 
     public void listarContas() {
         System.out.println("Lista de Contas:");
+        
         for (int i = 0; i < tamanho; i++) {
-            System.out.println("Nome: " + contas[i].getNome() + ", Valor: " + contas[i].getValor());
+            if (contas[i] != null) {
+                System.out.println("Nome: " + contas[i].getNome() + ", Valor: " + contas[i].getValor());    
+            }
+            
         }
     }
     public Conta procurarConta(String nome) {
