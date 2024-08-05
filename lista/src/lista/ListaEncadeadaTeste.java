@@ -6,6 +6,7 @@ public class ListaEncadeadaTeste {
     	//testeInicial();
     	//addInicio();
     	adicionarPosicao();
+    	//https://www.youtube.com/watch?v=QKNejhGhse0
     }
     
     public static void adicionarPosicao() {
@@ -58,5 +59,5 @@ public class ListaEncadeadaTeste {
         System.out.println(lista);
     	
     }
-    
+   
 }
