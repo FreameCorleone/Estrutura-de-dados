@@ -1,4 +1,4 @@
-import br.edu.ifba.cadastros.Cadastros;
+import ca.Cadastros;
 
 public class Mainn {
     public static void main(String[] args) {
