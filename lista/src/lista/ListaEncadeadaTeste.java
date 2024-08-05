@@ -5,9 +5,46 @@ public class ListaEncadeadaTeste {
     public static void main(String[] args) {
     	//testeInicial();
     	//addInicio();
-    	adicionarPosicao();
-    	//https://www.youtube.com/watch?v=QKNejhGhse0
+    	//adicionarPosicao();
+    	//removeInicio();
+    	//removeFinal();
+    	removePosicao();
     }
+    public static void removePosicao() {
+    	ListaEncadeada<Integer> lista = new ListaEncadeada<>();
+    	lista.adiciona(1);
+    	lista.adiciona(2);
+    	lista.adiciona(3);
+    	lista.adiciona(4);
+    	lista.adiciona(5);
+    	
+    	System.out.println(lista.removerPorPosicao(1));
+    	System.out.println(lista);
+    }
+    
+    public static void removeFinal() {
+    	ListaEncadeada<Integer> lista = new ListaEncadeada<>();
+    	lista.adiciona(1);
+    	lista.adiciona(2);
+    	lista.adiciona(4);
+    	System.out.println(lista);
+    	System.out.println(lista.removeFinal());
+    	System.out.println(lista);
+    	
+    }
+    
+    public static void removeInicio() {
+    	ListaEncadeada<Integer> lista = new ListaEncadeada<>();
+    	lista.adiciona(1);
+    	lista.adiciona(2);
+    	lista.adiciona(4);
+    	
+    	System.out.println(lista.removeInicio());
+    	
+    	
+    	System.out.println(lista);
+    
+    }  
     
     public static void adicionarPosicao() {
     	ListaEncadeada<Integer> lista = new ListaEncadeada<>();

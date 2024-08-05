@@ -54,7 +54,70 @@ public class ListaEncadeada<T> {
             this.tamanho++;
         }
     }
+    
+    
+    
+    
+    public T removeInicio() {
+    	if(this.tamanho == 0) {
+    		throw new RuntimeException("Lista está vazia.");
+    	}
+    	T removido = this.inicio.getElemento();
+    	this.inicio = this.inicio.getProximo();
+    	this.tamanho --;
+    	
+    	
+    	if(this.tamanho ==0) {
+    		this.ultimo = null;
+    	}
+    	
+    	return removido;
+    }
+    
+    private boolean posicaoNaoExiste(int posicao) {
+    	return !(posicao >= 0 && posicao <= this.tamanho);
+    }
+    
 
+    public T removeFinal() {
+    	if(this.tamanho == 0) {
+    		throw new RuntimeException("Lista está vazia.");
+    	}
+    	if (this.tamanho ==1) {
+    		this.removeInicio();
+    	}
+    	No<T> penultimoNo = this.buscaNo(this.tamanho - 2);
+    	T removido = penultimoNo.getProximo().getElemento();
+    	penultimoNo.setProximo(null);;
+    	this.ultimo = penultimoNo;
+    	this.tamanho--;
+    	
+    	return  removido;
+    }
+    
+    public T removerPorPosicao(int posicao) {
+    	if (this.posicaoNaoExiste(posicao)) {
+    		throw new IllegalArgumentException(NAO_EXISTE);
+    	}
+    	
+    	if (posicao ==0) {
+    		return this.removeInicio();
+    	}
+    	if(posicao == this.tamanho - 1) {
+    		return this.removeFinal();
+    	}
+    	No<T> noAnterior = this.buscaNo(posicao);
+    	No<T> atual = noAnterior.getProximo();
+    	No<T> proximo = atual.getProximo();
+    	noAnterior.setProximo(proximo);
+    	atual.setProximo(null);
+    	this.tamanho --;
+    	
+    	
+    	return atual.getElemento();
+    }
+    
+    
     public void limpa() {
         for (No<T> atual = this.inicio; atual != null;) {
             No<T> proximo = atual.getProximo();
