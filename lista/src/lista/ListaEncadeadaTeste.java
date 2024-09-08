@@ -4,11 +4,11 @@ public class ListaEncadeadaTeste {
 
     public static void main(String[] args) {
     	//testeInicial();
-    	//addInicio();
+    	addInicio();
     	//adicionarPosicao();
     	//removeInicio();
     	//removeFinal();
-    	removePosicao();
+    	//removePosicao();
     }
     public static void removePosicao() {
     	ListaEncadeada<Integer> lista = new ListaEncadeada<>();
